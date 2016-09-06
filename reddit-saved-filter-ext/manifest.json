@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Reddit Saved Filter",
+  "description": "This extension adds an input text to filter saved reddit items by subreddit.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.reddit.com/user/*/saved/*", "https://www.reddit.com/user/*/saved/*"],
+      "css": ["style.css"],
+      "js": ["jquery.min.js", "script.js"],
+	  "run_at": "document_end"
+    }
+  ]
+}
